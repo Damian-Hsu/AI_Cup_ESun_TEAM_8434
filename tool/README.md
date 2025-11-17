@@ -31,14 +31,5 @@ from tool import config
 # ds.save_dataset(df, 'processed_train')
 ```
 
-如何新增資料集
----------------
-1. 在 `config.py` 新增對應的路徑或 key（例如：DATA_PATHS['newset'] = 'path/to/newset'）。
-2. 在 `_dataset_store.py` 新增對應的 loader / saver 或在現有的 load 接口中加入 key 處理。
-3. 加上必要的文件說明與測試，確保在 CI / pipeline 中可以正確載入。
 
-建議
------
-- 在 `_dataset_store.py` 中實作容錯與日誌（例如檔案不存在時拋出清楚錯誤、或回傳空 DataFrame）。
-- 將敏感或環境相關設定（如絕對路徑）抽到 `config.py`，並使用環境變數或 .env 管理不同環境的設定。
 
