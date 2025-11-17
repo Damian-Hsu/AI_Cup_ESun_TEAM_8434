@@ -1,0 +1,13 @@
+# 忽略資料夾
+.data/
+__pycache__/
+.venv/
+.ipynb_checkpoints/
+
+# 忽略資料檔案
+*.csv
+*.pt
+*.npz
+!acct_alert.csv
+!acct_predict.csv
+!acct_transaction.csv
