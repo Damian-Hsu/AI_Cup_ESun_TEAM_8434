@@ -3,6 +3,7 @@
 __pycache__/
 .venv/
 .ipynb_checkpoints/
+.vscode/
 
 # 忽略資料檔案
 *.csv
