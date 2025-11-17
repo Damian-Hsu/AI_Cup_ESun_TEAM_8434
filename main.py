@@ -1,3 +1,4 @@
+# 若要驗證請直接執行 main.py 即可
 import tool
 import gc
 import pandas as pd
